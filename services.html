@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — Lumière Hair Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Lumière<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="current">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+  </ul>
+  <a href="booking.html" class="nav-book">Reserve</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobileMenu" style="display:none; position:fixed; top:68px; left:0; right:0; background:var(--ivory); z-index:99; padding:28px 28px 36px; border-bottom:1px solid var(--cream);">
+  <ul style="list-style:none; display:flex; flex-direction:column; gap:20px;">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="current">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+  </ul>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-inner fade-up">
+    <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Services</p>
+    <p class="page-eyebrow">What We Offer</p>
+    <h1 class="page-title">Services tailored to <em>your</em> story</h1>
+    <p class="page-sub">From precision cuts to full bridal styling — every service begins with a real consultation, never a template.</p>
+  </div>
+</header>
+
+<!-- SERVICES GRID -->
+<section id="services-page">
+  <div class="services-full-grid">
+    <div class="service-card fade-up">
+      <div class="service-num">— 01</div>
+      <h3 class="service-title">Precision Cut</h3>
+      <p class="service-desc">A bespoke cut that honours your hair's texture, face shape, and lifestyle — never templated, always intentional.</p>
+      <div class="service-price">From ₹1,200</div>
+      <a href="booking.html" class="service-link">Book this →</a>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 02</div>
+      <h3 class="service-title">Colour & Balayage</h3>
+      <p class="service-desc">Hand-painted balayage, full colour, or creative panels — we blend science and artistry for dimension that lasts.</p>
+      <div class="service-price">From ₹3,500</div>
+      <a href="booking.html" class="service-link">Book this →</a>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 03</div>
+      <h3 class="service-title">Keratin Treatment</h3>
+      <p class="service-desc">Brazilian keratin smoothing that eliminates frizz and restores silk-like softness for up to 5 months.</p>
+      <div class="service-price">From ₹5,000</div>
+      <a href="booking.html" class="service-link">Book this →</a>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 04</div>
+      <h3 class="service-title">Scalp Ritual</h3>
+      <p class="service-desc">A 60-minute scalp detox and hydration treatment — the foundation of healthy, luminous growth.</p>
+      <div class="service-price">From ₹1,800</div>
+      <a href="booking.html" class="service-link">Book this →</a>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 05</div>
+      <h3 class="service-title">Bridal Styling</h3>
+      <p class="service-desc">Trial + wedding-day styling with a dedicated senior stylist. Timeless updos or cascading curls — your vision, perfected.</p>
+      <div class="service-price">From ₹8,000</div>
+      <a href="booking.html" class="service-link">Book this →</a>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 06</div>
+      <h3 class="service-title">Hair Extensions</h3>
+      <p class="service-desc">Remy human-hair extensions bonded or taped for undetectable length and volume. Consultation included.</p>
+      <div class="service-price">From ₹12,000</div>
+      <a href="booking.html" class="service-link">Book this →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--charcoal); padding:96px 64px; text-align:center;">
+  <p class="section-eyebrow" style="color:var(--rose-gold);">Not Sure What You Need?</p>
+  <h2 class="section-heading" style="color:var(--ivory); max-width:600px; margin:0 auto 36px;">Book a free <em style="color:var(--rose-gold)">consultation</em></h2>
+  <a href="booking.html" class="btn-primary" style="background:var(--rose-gold);">Book Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">Lumière<span>.</span></a>
+      <p class="footer-tagline">A hair studio where craft meets care — in the heart of Ludhiana, Punjab.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Studio</div>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Hours</div>
+      <ul>
+        <li><a href="#">Mon – Fri: 10am – 8pm</a></li>
+        <li><a href="#">Saturday: 9am – 9pm</a></li>
+        <li><a href="#">Sunday: 10am – 6pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:+917009782071">+91 98765 43210</a></li>
+        <li><a href="mailto:hello@lumierehair.in">hello@lumierehair.in</a></li>
+        <li><a href="#">Model Town, Ludhiana</a></li>
+        <li><a href="#">Punjab – 141002</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lumière Hair Studio. All rights reserved.</span>
+    <span style="color:var(--rose-gold);">Made with ✂ in Ludhiana</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team — Lumière Hair Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Lumière<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html" class="current">Our Team</a></li>
+  </ul>
+  <a href="booking.html" class="nav-book">Reserve</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobileMenu" style="display:none; position:fixed; top:68px; left:0; right:0; background:var(--ivory); z-index:99; padding:28px 28px 36px; border-bottom:1px solid var(--cream);">
+  <ul style="list-style:none; display:flex; flex-direction:column; gap:20px;">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html" class="current">Our Team</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+  </ul>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-inner fade-up">
+    <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Our Team</p>
+    <p class="page-eyebrow">Meet the Artists</p>
+    <h1 class="page-title">Behind every look, a <em>master</em></h1>
+    <p class="page-sub">Twelve stylists, one shared standard: real listening before a single scissor opens.</p>
+  </div>
+</header>
+
+<!-- TEAM GRID -->
+<section id="team-page">
+  <div class="team-grid">
+    <div class="team-card fade-up">
+      <img class="team-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80" alt="Priya Sharma"/>
+      <div class="team-name">Priya Sharma</div>
+      <div class="team-role">Creative Director</div>
+      <p class="team-bio">Paris-trained with 14 years of experience in couture colour and editorial styling. Priya's balayage work has appeared in Vogue India.</p>
+    </div>
+    <div class="team-card fade-up">
+      <img class="team-photo" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Aryan Mehta"/>
+      <div class="team-name">Aryan Mehta</div>
+      <div class="team-role">Senior Stylist</div>
+      <p class="team-bio">Specialising in precision geometric cuts and men's grooming, Aryan brings a sculptor's eye to every client he works with.</p>
+    </div>
+    <div class="team-card fade-up">
+      <img class="team-photo" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Kavya Nair"/>
+      <div class="team-name">Kavya Nair</div>
+      <div class="team-role">Bridal Specialist</div>
+      <p class="team-bio">With 200+ brides styled across Punjab, Kavya is renowned for her intricate updos and her ability to make every bride feel effortlessly beautiful.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="fade-up">
+    <p class="section-eyebrow">Client Love</p>
+    <h2 class="section-heading">Stories from our <em>guests</em></h2>
+  </div>
+  <div class="testimonial-grid fade-up">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Priya understood exactly what I wanted before I even finished explaining. My balayage has never looked this natural."</p>
+      <div class="testimonial-author">— Simran K., Ludhiana</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Kavya made my wedding hair dreams real. Couldn't have imagined a better stylist for our day."</p>
+      <div class="testimonial-author">— Meenakshi R., Chandigarh</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Finally a salon that doesn't cut more than I asked for. I left feeling like myself, but elevated."</p>
+      <div class="testimonial-author">— Dhruv T., Amritsar</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--charcoal); padding:96px 64px; text-align:center;">
+  <p class="section-eyebrow" style="color:var(--rose-gold);">Found Your Stylist?</p>
+  <h2 class="section-heading" style="color:var(--ivory); max-width:600px; margin:0 auto 36px;">Book your <em style="color:var(--rose-gold)">appointment</em> today</h2>
+  <a href="booking.html" class="btn-primary" style="background:var(--rose-gold);">Book Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">Lumière<span>.</span></a>
+      <p class="footer-tagline">A hair studio where craft meets care — in the heart of Ludhiana, Punjab.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Studio</div>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Hours</div>
+      <ul>
+        <li><a href="#">Mon – Fri: 10am – 8pm</a></li>
+        <li><a href="#">Saturday: 9am – 9pm</a></li>
+        <li><a href="#">Sunday: 10am – 6pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:+917009782071">+91 98765 43210</a></li>
+        <li><a href="mailto:hello@lumierehair.in">hello@lumierehair.in</a></li>
+        <li><a href="#">Model Town, Ludhiana</a></li>
+        <li><a href="#">Punjab – 141002</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lumière Hair Studio. All rights reserved.</span>
+    <span style="color:var(--rose-gold);">Made with ✂ in Ludhiana</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

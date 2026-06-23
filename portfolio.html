@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Lumière Hair Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Lumière<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html" class="current">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+  </ul>
+  <a href="booking.html" class="nav-book">Reserve</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobileMenu" style="display:none; position:fixed; top:68px; left:0; right:0; background:var(--ivory); z-index:99; padding:28px 28px 36px; border-bottom:1px solid var(--cream);">
+  <ul style="list-style:none; display:flex; flex-direction:column; gap:20px;">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html" class="current">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+  </ul>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-inner fade-up">
+    <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Portfolio</p>
+    <p class="page-eyebrow">Our Work</p>
+    <h1 class="page-title">Every cut tells a <em>story</em></h1>
+    <p class="page-sub">A curated look at the colour, cuts, and bridal styling we've crafted for our clients across Punjab.</p>
+  </div>
+</header>
+
+<!-- PORTFOLIO GRID -->
+<section id="portfolio-page">
+  <div class="portfolio-filters fade-up">
+    <button class="filter-btn active" onclick="filterPortfolio('all', this)">All</button>
+    <button class="filter-btn" onclick="filterPortfolio('colour', this)">Colour</button>
+    <button class="filter-btn" onclick="filterPortfolio('cut', this)">Cut</button>
+    <button class="filter-btn" onclick="filterPortfolio('bridal', this)">Bridal</button>
+  </div>
+
+  <div class="portfolio-grid" id="portfolioGrid">
+    <div class="portfolio-item" data-cat="colour" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80" alt="Balayage transformation" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Colour</div><div class="portfolio-label">Sun-kissed Balayage</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="cut" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="Precision bob cut" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Cut</div><div class="portfolio-label">The French Bob</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="bridal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Bridal updo" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Bridal</div><div class="portfolio-label">Romantic Updo</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="colour" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1522337094846-8a818192de1f?w=600&q=80" alt="Rose gold colour" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Colour</div><div class="portfolio-label">Rose Gold Melt</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="cut" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&q=80" alt="Layered cut" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Cut</div><div class="portfolio-label">Cascading Layers</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="colour" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1617696618580-0bef23fe2e1a?w=600&q=80" alt="Platinum blonde" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Colour</div><div class="portfolio-label">Platinum Blonde</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="bridal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80" alt="Bridal half-up" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Bridal</div><div class="portfolio-label">Bohemian Half-Up</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="cut" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80" alt="Textured pixie" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Cut</div><div class="portfolio-label">Textured Pixie</div></div></div>
+    </div>
+    <div class="portfolio-item" data-cat="colour" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=600&q=80" alt="Brunette highlights" loading="lazy"/>
+      <div class="portfolio-overlay"><div><div class="portfolio-sublabel">Colour</div><div class="portfolio-label">Chocolate Highlights</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--charcoal); padding:96px 64px; text-align:center;">
+  <p class="section-eyebrow" style="color:var(--rose-gold);">Like What You See?</p>
+  <h2 class="section-heading" style="color:var(--ivory); max-width:600px; margin:0 auto 36px;">Let's create <em style="color:var(--rose-gold)">your</em> next look</h2>
+  <a href="booking.html" class="btn-primary" style="background:var(--rose-gold);">Book a Session</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">Lumière<span>.</span></a>
+      <p class="footer-tagline">A hair studio where craft meets care — in the heart of Ludhiana, Punjab.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Studio</div>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Hours</div>
+      <ul>
+        <li><a href="#">Mon – Fri: 10am – 8pm</a></li>
+        <li><a href="#">Saturday: 9am – 9pm</a></li>
+        <li><a href="#">Sunday: 10am – 6pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:+917009782071">+91 98765 43210</a></li>
+        <li><a href="mailto:hello@lumierehair.in">hello@lumierehair.in</a></li>
+        <li><a href="#">Model Town, Ludhiana</a></li>
+        <li><a href="#">Punjab – 141002</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lumière Hair Studio. All rights reserved.</span>
+    <span style="color:var(--rose-gold);">Made with ✂ in Ludhiana</span>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img id="lightboxImg" src="" alt="Portfolio image"/>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

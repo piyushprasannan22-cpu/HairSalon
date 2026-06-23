@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumière Hair Studio — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ss
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Lumière<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="current">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+  </ul>
+  <a href="booking.html" class="nav-book">Reserve</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+
+<div id="mobileMenu" style="display:none; position:fixed; top:68px; left:0; right:0; background:var(--ivory); z-index:99; padding:28px 28px 36px; border-bottom:1px solid var(--cream);">
+  <ul style="list-style:none; display:flex; flex-direction:column; gap:20px;">
+    <li><a href="index.html" class="current">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-text fade-up">
+    <p class="hero-eyebrow">Paris-trained · Established 2014</p>
+    <h1 class="hero-headline">Where hair becomes <em>art</em></h1>
+    <p class="hero-sub">Precision cuts, couture colour, and transformative treatments — crafted by stylists who believe your hair should be the most beautiful thing you wear.</p>
+    <div class="hero-ctas">
+      <a href="booking.html" class="btn-primary">Book a Session</a>
+      <a href="portfolio.html" class="btn-ghost">View Portfolio</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="hero-image-inner"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">12+</div>
+      <div class="hero-badge-label">Years of Excellence</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCISSOR DIVIDER -->
+<div class="scissor-divider">
+  <div class="scissor-line"></div>
+  <span class="scissor-icon">✂</span>
+  <div class="scissor-line"></div>
+</div>
+
+<!-- SERVICES TEASER -->
+<section class="preview-strip">
+  <div class="preview-strip-header fade-up">
+    <div>
+      <p class="section-eyebrow">What We Offer</p>
+      <h2 class="section-heading" style="margin-bottom:0">Services tailored to <em>your</em> story</h2>
+    </div>
+    <a href="services.html" class="preview-link">View All Services →</a>
+  </div>
+  <div class="preview-grid-3">
+    <div class="service-card fade-up">
+      <div class="service-num">— 01</div>
+      <h3 class="service-title">Precision Cut</h3>
+      <p class="service-desc">A bespoke cut that honours your hair's texture, face shape, and lifestyle.</p>
+      <div class="service-price">From ₹1,200</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 02</div>
+      <h3 class="service-title">Colour & Balayage</h3>
+      <p class="service-desc">Hand-painted balayage and full colour for dimension that lasts.</p>
+      <div class="service-price">From ₹3,500</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">— 03</div>
+      <h3 class="service-title">Bridal Styling</h3>
+      <p class="service-desc">Trial + wedding-day styling with a dedicated senior stylist.</p>
+      <div class="service-price">From ₹8,000</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCISSOR DIVIDER -->
+<div class="scissor-divider">
+  <div class="scissor-line"></div>
+  <span class="scissor-icon">✂</span>
+  <div class="scissor-line"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-image">
+    <div class="about-image-overlay"></div>
+  </div>
+  <div class="about-content fade-up">
+    <p class="section-eyebrow">Our Philosophy</p>
+    <h2 class="section-heading">Hair is the <em>frame</em> of your face — we take that seriously</h2>
+    <p class="about-body">Lumière was founded on a single conviction: that great hair begins with great listening. Before a single scissor opens, our stylists sit with you — learning your routine, your texture, your aspirations.</p>
+    <div class="about-stats">
+      <div><div class="about-stat-num">4,800+</div><div class="about-stat-label">Happy Clients</div></div>
+      <div><div class="about-stat-num">12</div><div class="about-stat-label">Master Stylists</div></div>
+      <div><div class="about-stat-num">98%</div><div class="about-stat-label">Rebooking Rate</div></div>
+    </div>
+    <a href="team.html" class="btn-primary" style="align-self:flex-start">Meet Our Team</a>
+  </div>
+</section>
+
+<!-- PORTFOLIO TEASER -->
+<section class="preview-strip" style="background:var(--cream)">
+  <div class="preview-strip-header fade-up">
+    <div>
+      <p class="section-eyebrow">Portfolio</p>
+      <h2 class="section-heading" style="margin-bottom:0">Our finest <em>transformations</em></h2>
+    </div>
+    <a href="portfolio.html" class="preview-link">View Full Portfolio →</a>
+  </div>
+  <div class="preview-grid-photos fade-up">
+    <a href="portfolio.html" class="preview-photo">
+      <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=500&q=80" alt="Balayage"/>
+      <div class="preview-photo-overlay"><span class="preview-photo-label">Balayage</span></div>
+    </a>
+    <a href="portfolio.html" class="preview-photo">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&q=80" alt="French Bob"/>
+      <div class="preview-photo-overlay"><span class="preview-photo-label">French Bob</span></div>
+    </a>
+    <a href="portfolio.html" class="preview-photo">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500&q=80" alt="Bridal Updo"/>
+      <div class="preview-photo-overlay"><span class="preview-photo-label">Bridal Updo</span></div>
+    </a>
+    <a href="portfolio.html" class="preview-photo">
+      <img src="https://images.unsplash.com/photo-1617696618580-0bef23fe2e1a?w=500&q=80" alt="Platinum Blonde"/>
+      <div class="preview-photo-overlay"><span class="preview-photo-label">Platinum Blonde</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="fade-up">
+    <p class="section-eyebrow">Client Love</p>
+    <h2 class="section-heading">Stories from our <em>guests</em></h2>
+  </div>
+  <div class="testimonial-grid fade-up">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Priya understood exactly what I wanted before I even finished explaining. My balayage has never looked this natural."</p>
+      <div class="testimonial-author">— Simran K., Ludhiana</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Kavya made my wedding hair dreams real. Couldn't have imagined a better stylist for our day."</p>
+      <div class="testimonial-author">— Meenakshi R., Chandigarh</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Finally a salon that doesn't cut more than I asked for. I left feeling like myself, but elevated."</p>
+      <div class="testimonial-author">— Dhruv T., Amritsar</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--charcoal); padding:96px 64px; text-align:center;">
+  <p class="section-eyebrow" style="color:var(--rose-gold);">Reserve Your Chair</p>
+  <h2 class="section-heading" style="color:var(--ivory); max-width:600px; margin:0 auto 36px;">Ready for your <em style="color:var(--rose-gold)">transformation?</em></h2>
+  <a href="booking.html" class="btn-primary" style="background:var(--rose-gold);">Book Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">Lumière<span>.</span></a>
+      <p class="footer-tagline">A hair studio where craft meets care — in the heart of Ludhiana, Punjab.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Studio</div>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Hours</div>
+      <ul>
+        <li><a href="#">Mon – Fri: 10am – 8pm</a></li>
+        <li><a href="#">Saturday: 9am – 9pm</a></li>
+        <li><a href="#">Sunday: 10am – 6pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:+917009782071">+91 98765 43210</a></li>
+        <li><a href="mailto:hello@lumierehair.in">hello@lumierehair.in</a></li>
+        <li><a href="#">Model Town, Ludhiana</a></li>
+        <li><a href="#">Punjab – 141002</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lumière Hair Studio. All rights reserved.</span>
+    <span style="color:var(--rose-gold);">Made with ✂ in Ludhiana</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Now — Lumière Hair Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Lumière<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+  </ul>
+  <a href="booking.html" class="nav-book" style="background:var(--rose-gold)">Reserve</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobileMenu" style="display:none; position:fixed; top:68px; left:0; right:0; background:var(--ivory); z-index:99; padding:28px 28px 36px; border-bottom:1px solid var(--cream);">
+  <ul style="list-style:none; display:flex; flex-direction:column; gap:20px;">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="booking.html" class="current">Book Now</a></li>
+  </ul>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-inner fade-up">
+    <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Book Now</p>
+    <p class="page-eyebrow">Reserve Your Chair</p>
+    <h1 class="page-title">Ready for your <em>transformation?</em></h1>
+    <p class="page-sub">Choose a service and preferred date — we'll confirm within 2 hours.</p>
+  </div>
+</header>
+
+<!-- BOOKING -->
+<section id="booking-page">
+  <div class="booking-layout">
+    <div class="booking-form-card fade-up">
+      <p class="section-eyebrow">Appointment Details</p>
+      <h2 class="section-heading">Tell us about <em>you</em></h2>
+      <form onsubmit="handleBook(event)">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" placeholder="Your Name" required aria-label="Name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" placeholder="+91 00000 00000" required aria-label="Phone"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Service</label>
+          <select aria-label="Service" required>
+            <option value="" disabled selected>Choose Service</option>
+            <option>Precision Cut</option>
+            <option>Colour & Balayage</option>
+            <option>Keratin Treatment</option>
+            <option>Scalp Ritual</option>
+            <option>Bridal Styling</option>
+            <option>Hair Extensions</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Date</label>
+          <input type="date" aria-label="Date" required/>
+        </div>
+        <button type="submit" class="btn-book">Book Now</button>
+        <p id="bookingMsg">✓ Request received! We'll confirm your appointment shortly.</p>
+      </form>
+    </div>
+
+    <div class="booking-info fade-up">
+      <div class="info-block">
+        <div class="info-label">Visit Us</div>
+        <div class="info-value">Lumière Hair Studio</div>
+        <div class="info-sub">2nd Floor, Sarabha Nagar Market, Model Town, Ludhiana, Punjab – 141002</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Call or WhatsApp</div>
+        <div class="info-value">+91 98765 43210</div>
+        <div class="info-sub">Mon – Sat, 10am – 8pm</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Email</div>
+        <div class="info-value">hello@lumierehair.in</div>
+        <div class="info-sub">We typically respond within a few hours</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Studio Hours</div>
+        <div class="info-value">Mon – Fri: 10am – 8pm</div>
+        <div class="info-sub">Saturday: 9am – 9pm · Sunday: 10am – 6pm</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Good to Know</div>
+        <div class="info-value" style="font-size:1rem; font-family:'DM Sans',sans-serif; font-weight:300; color:var(--text-muted); line-height:1.7;">First-time guests receive a complimentary consultation. Please arrive 10 minutes early for colour services.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">Lumière<span>.</span></a>
+      <p class="footer-tagline">A hair studio where craft meets care — in the heart of Ludhiana, Punjab.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Studio</div>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Hours</div>
+      <ul>
+        <li><a href="#">Mon – Fri: 10am – 8pm</a></li>
+        <li><a href="#">Saturday: 9am – 9pm</a></li>
+        <li><a href="#">Sunday: 10am – 6pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:+917009782071">+91 98765 43210</a></li>
+        <li><a href="mailto:hello@lumierehair.in">hello@lumierehair.in</a></li>
+        <li><a href="#">Model Town, Ludhiana</a></li>
+        <li><a href="#">Punjab – 141002</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lumière Hair Studio. All rights reserved.</span>
+    <span style="color:var(--rose-gold);">Made with ✂ in Ludhiana</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  document.querySelector('input[type=date]').min = new Date().toISOString().split('T')[0];
+</script>
+</body>
+</html>
